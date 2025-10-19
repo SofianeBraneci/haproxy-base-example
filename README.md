@@ -35,8 +35,7 @@ Here's a graphical representation:
 To try the setup:
 ```
 - docker network create webnet
-docker build --build-arg DIR_TO_COPY_FROM=./nginx-1 -t nginx-1 .
-
+- docker build --build-arg DIR_TO_COPY_FROM=./nginx-1 -t nginx-1 .
 - docker build --build-arg DIR_TO_COPY_FROM=./nginx-2 -t nginx-2 . 
 - cd ./haproxy
 - docker build -t haproyx-rev  . 
